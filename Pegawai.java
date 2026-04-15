@@ -17,7 +17,6 @@ public class Pegawai {
     double potongan;
     double gajiBersih;
 
-    // Method untuk menentukan gaji pokok berdasarkan golongan
     void setGajiPokok() {
         if (golongan.equalsIgnoreCase("A")) {
             gajiPokok = 3000000;
@@ -30,17 +29,13 @@ public class Pegawai {
         }
     }
 
-    // Method hitung tunjangan (10% dari gaji pokok)
     void hitungTunjangan() {
         tunjangan = 0.1 * gajiPokok;
     }
-
-    // Method hitung gaji bersih
     void hitungGajiBersih() {
         gajiBersih = gajiPokok + tunjangan - potongan;
     }
 
-    // Method tampil data
     void tampilData() {
         System.out.println("NIP           : " + nip);
         System.out.println("Nama          : " + nama);
